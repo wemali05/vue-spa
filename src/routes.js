@@ -21,7 +21,7 @@ export const routes = [
      children: [
         {path: '', component: UserStart},
         {path: ':id', component: UserDetail, beforeEnter: (to, from, next) => {
-            console.log('inside rote setup');
+            console.log('inside route setup');
             next();
         }},
         {path: ':id/edit', component: UserEdit, name: 'UserEdit'},
